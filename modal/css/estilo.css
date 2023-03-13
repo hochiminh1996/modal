@@ -31,7 +31,7 @@ main#principal {
 .btn {
     font-family: var(--font-padrao);
     padding: 10px;
-    width: 200px;
+    width: 150px;
     border: 1px solid #14BDEB;
     color: #e9e8ea;
     background-color: #00100B;
@@ -152,5 +152,10 @@ div#btns {
         display: flex;
         flex-direction: row;
         justify-content: center;
+ 
+    }
+    a{
+        text-decoration: none;
+        color:#e9e8ea;
     }
 }
