@@ -65,7 +65,7 @@ div.modal-wrapper {
     width: 35%;
     height: fit-content;
     margin: 0 auto;
-    margin-top: 1.5em;
+    margin-top: 4em;
 }
 
 /* escondendo o modal */
@@ -141,6 +141,23 @@ div#btns {
     padding: 10px;
 }
 
+#div_img{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+#div_img .img-techs{
+    border-radius: 50%;
+    opacity: .7;
+}
+
+#div_img .img-techs:hover{
+    opacity: 1;
+    transition: all linear .5s;
+}
 /* botão de fechar o modão estilo */
 
 @media(max-width:670px) {
