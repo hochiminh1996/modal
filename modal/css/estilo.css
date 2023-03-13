@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-padrao: "Bebas Neue", sans-serif;
+}
+
+body {
+    background-color: #00100B;
+}
+
+/* principal */
+main#principal {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* btn */
+.btn {
+    font-family: var(--font-padrao);
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #14BDEB;
+    color: #e9e8ea;
+    background-color: #00100B;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    opacity: 1;
+    outline: none;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 10px #14BDEB;
+    transition: all linear .5s;
+    background-color: rgba(0, 0, 0, 1);
+    color: #14BDEB;
+}
+
+/* esconde o botão ao clicar */
+.btn.opacity {
+    opacity: 0;
+}
+
+/* modal */
+div.modal-wrapper {
+    border: 1px solid #14BDEB;
+    border-radius: 10px;
+    width: 50%;
+    padding: 10px;
+    height: fit-content;
+    margin: 0 auto;
+    
+
+}
+
+/* escondendo o modal */
+.invisible {
+    display: none;
+}
+
+
+#info {
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #e9e8ea;
+    font-family: var(--font-padrao);
+    background-color: #00100B;
+
+}
+
+
+#imagem {
+    width: 200px;
+    height: 200px;
+    background-position: center center;
+    border: 1px solid #14BDEB;
+    padding: 5px;
+    border-radius: 50%;
+    margin: 10px 10px;
+    opacity: .8;
+}
+
+#imagem:hover {
+    opacity: 1;
+    box-shadow: 0px 0px 10px #14BDEB;
+    transition: all linear .5s;
+}
+
+.paragrafo {
+    text-align: justify;
+    text-indent: 25px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #d5d5d5;
+    border: 1px solid #14BDEB;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+    opacity: .8;
+}
+
+.paragrafo:hover {
+    opacity: 1;
+    box-shadow: 0px 0px 10px #14BDEB;
+    transition: .8s;
+
+}
+
+
+div#btns{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+/* botão de fechar o modão estilo */
