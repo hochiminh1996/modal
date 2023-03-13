@@ -145,7 +145,7 @@ div#btns {
 @media(max-width:670px) {
 
     div.modal-wrapper {
-        width: 90%;
+        width: 99%;
         height: fit-content;
         margin-top: 8em;
     }
