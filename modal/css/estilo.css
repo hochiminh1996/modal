@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: #00100B;
+    background-color:rgba(0, 0, 0, 1);
 }
 
 /* principal */
@@ -48,6 +48,10 @@ main#principal {
     color: #14BDEB;
 }
 
+.remove-img{
+    display: none;
+}
+
 /* esconde o botão ao clicar */
 .btn.opacity {
     opacity: 0;
@@ -80,12 +84,12 @@ div.modal-wrapper {
     align-items: center;
     color: #e9e8ea;
     font-family: var(--font-padrao);
-    background-color: #00100B;
+    background-color:rgba(0, 0, 0, 1);
 
 }
 
 
-#imagem {
+.imagem {
     width: 200px;
     height: 200px;
     background-position: center center;
@@ -96,7 +100,7 @@ div.modal-wrapper {
     opacity: .8;
 }
 
-#imagem:hover {
+.imagem:hover {
     opacity: 1;
     box-shadow: 0px 0px 10px #14BDEB;
     transition: all linear .5s;
@@ -133,8 +137,9 @@ div#btns{
 /* botão de fechar o modão estilo */
 
 @media(max-width:670px) {
+  
     div.modal-wrapper {
         width: 90%;
-        margin-top: 10em;
+        height: fit-content;
     }
 }

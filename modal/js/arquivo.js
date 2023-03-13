@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", main);
 
 
-function eventos() {
+function eventos(img) {
     const modal = document.querySelector(".modal-wrapper");
     const buttonModalOpen = document.querySelector("#openModal");
     const buttonModalClose = document.querySelector("#closeModal");
@@ -9,12 +9,21 @@ function eventos() {
 
     //quando for clicado em informações, ele adiciona um evento
     buttonModalOpen.addEventListener("click", () => {
-        modal.classList.remove("invisible");//ele remove a classe que deixa a div invisível
-        buttonModalOpen.classList.add("opacity");//remove o btn informações
+        img.classList.add("remove-img");//adicionando a classe para remover a img do inicio
+
+        //verifica se a classe já existe, para evitar processamento desnecessário
+        if (modal.classList.contains("invisible")) {
+            modal.classList.remove("invisible");//ele remove a classe que deixa a div invisível
+            buttonModalOpen.classList.add("opacity");//remove o btn informações
+        }
+
     })
 
     //fecha o modal se for pressionado o Escape ou esc
     document.addEventListener("keyup", (event) => {
+
+        img.classList.remove("remove-img");//remove o display none, e a img volta
+
         const isEscKey = event.key === "Escape";
         //verifica se a tecla digitado foi o escape
 
@@ -28,6 +37,9 @@ function eventos() {
 
     //se for clicado em sair, dentro do input do modal
     buttonModalClose.addEventListener("click", () => {
+
+        img.classList.remove("remove-img");//remove o display none, e a img volta
+
         modal.classList.add("invisible");//faz o modal ficar invisível
         buttonModalOpen.classList.remove("opacity");//faz ficar visível o nosso botão informação, já qu estamos romovendo a classe qeu deixava invisível
     })
@@ -35,17 +47,17 @@ function eventos() {
 }
 
 
-function informacoes(modal){
+function informacoes(modal) {
     const div_info = document.querySelector("#info");
     const btn_close = document.querySelector("#closeModal")
 
     const h1 = document.createElement("h1");
     const img = document.createElement("img");
     const p = document.createElement("p");
-    
+
 
     h1.textContent = "Sobre mim";
-    img.setAttribute("id", "imagem");
+    img.setAttribute("class", "imagem");
     img.title = "Olá, mundo";
     img.src = "img/img.jpg";
     p.setAttribute("class", "paragrafo")
@@ -58,10 +70,10 @@ function informacoes(modal){
 }
 
 function main() {
-    //acessando o modal
+    const img = document.querySelector(".imagem");
 
     //função exclusiva para eventos
-    eventos();
+    eventos(img);
 
     //função para inserir elementos e informações do modal
     informacoes();
