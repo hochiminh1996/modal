@@ -65,7 +65,7 @@ div.modal-wrapper {
     width: 35%;
     height: fit-content;
     margin: 0 auto;
-    margin-top: 4em;
+    margin-top: 5em;
 }
 
 /* escondendo o modal */
@@ -147,6 +147,8 @@ div#btns {
     justify-content: center;
     /* border: 1px solid red; */
     width: 100%;
+    border-bottom: 1px solid #14BDEB;
+    padding-bottom: 15px;
 }
 
 #div_img .img-techs{
