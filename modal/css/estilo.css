@@ -127,6 +127,14 @@ div#btns{
     display: flex;
     justify-content: space-between;
     /* border: 1px solid red; */
+    width: 100%;
 }
 
 /* botão de fechar o modão estilo */
+
+@media(max-width:670px) {
+    div.modal-wrapper {
+        width: 90%;
+        margin-top: 8em;
+    }
+}
