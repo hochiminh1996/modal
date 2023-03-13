@@ -105,7 +105,7 @@ div.modal-wrapper {
 .paragrafo {
     text-align: justify;
     text-indent: 25px;
-    font-size: 1.2em;
+    font-size: 17px;
     margin-bottom: 10px;
     font-family: 'Courier New', Courier, monospace;
     color: #d5d5d5;
@@ -135,6 +135,6 @@ div#btns{
 @media(max-width:670px) {
     div.modal-wrapper {
         width: 90%;
-        margin-top: 8em;
+        margin-top: 10em;
     }
 }
