@@ -116,9 +116,11 @@ div.modal-wrapper {
     margin-bottom: 10px;
     font-family: 'Courier New', Courier, monospace;
     color: white;
-    border: 1px solid #14BDEB;
+    border-top: 1px solid #14BDEB;
+    border-bottom: 1px solid #14BDEB;
     padding: 10px;
-    border-radius: 0px 0px 10px 10px;
+    /* border-radius: 0px 0px 10px 10px; */
+    padding: 10px;
     opacity: .8;
 }
 
