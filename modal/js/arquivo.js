@@ -22,7 +22,6 @@ function eventos(img) {
     //fecha o modal se for pressionado o Escape ou esc
     document.addEventListener("keyup", (event) => {
 
-        img.classList.remove("remove-img");//remove o display none, e a img volta
 
         const isEscKey = event.key === "Escape";
         //verifica se a tecla digitado foi o escape
@@ -31,6 +30,9 @@ function eventos(img) {
             buttonModalOpen.classList.remove("opacity");//retira a classe q deixa invisível o btn de informações, ele voltará a apaerecer
 
             modal.classList.add("invisible");//adiciona a classe invisível ao nosso modal, ele não vai aparecer mais
+
+            img.classList.remove("remove-img");//remove o display none, e a img de perfil volta
+
         }
 
     })
