@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color:rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 1);
 }
 
 /* principal */
@@ -23,6 +23,7 @@ main#principal {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 
 }
 
@@ -48,7 +49,7 @@ main#principal {
     color: #14BDEB;
 }
 
-.remove-img{
+.remove-img {
     display: none;
 }
 
@@ -62,11 +63,8 @@ div.modal-wrapper {
     border: 1px solid #14BDEB;
     border-radius: 10px;
     width: 50%;
-    padding: 10px;
     height: fit-content;
     margin: 0 auto;
-    
-
 }
 
 /* escondendo o modal */
@@ -84,10 +82,15 @@ div.modal-wrapper {
     align-items: center;
     color: #e9e8ea;
     font-family: var(--font-padrao);
-    background-color:rgba(0, 0, 0, 1);
-
+    background-color: rgba(0, 0, 0, 1);
 }
 
+#info h1 {
+    background-color: #09f;
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+
+}
 
 .imagem {
     width: 200px;
@@ -112,7 +115,7 @@ div.modal-wrapper {
     font-size: 17px;
     margin-bottom: 10px;
     font-family: 'Courier New', Courier, monospace;
-    color: #d5d5d5;
+    color: white;
     border: 1px solid #14BDEB;
     padding: 10px;
     border-radius: 0px 0px 10px 10px;
@@ -127,17 +130,18 @@ div.modal-wrapper {
 }
 
 
-div#btns{
+div#btns {
     display: flex;
     justify-content: space-between;
     /* border: 1px solid red; */
     width: 100%;
+    padding: 10px;
 }
 
 /* botão de fechar o modão estilo */
 
 @media(max-width:670px) {
-  
+
     div.modal-wrapper {
         width: 90%;
         height: fit-content;
