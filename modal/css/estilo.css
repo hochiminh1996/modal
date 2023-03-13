@@ -62,9 +62,10 @@ main#principal {
 div.modal-wrapper {
     border: 1px solid #14BDEB;
     border-radius: 10px;
-    width: 50%;
+    width: 35%;
     height: fit-content;
     margin: 0 auto;
+    margin-top: 1.5em;
 }
 
 /* escondendo o modal */
